@@ -40,6 +40,10 @@
       pointer-events: none;
     }
 
+    #ratReveal {
+      transform: translateY(10px);
+    }
+
     #ratIdle {
       opacity: 1;
     }
@@ -58,8 +62,8 @@
 
     .pet-zone {
       position: absolute;
-      left: 39%;
-      top: 10%;
+      left: 43%;
+      top: 14%;
       width: 22%;
       height: 25%;
       border: none;
@@ -116,6 +120,8 @@ white-space: pre-line;
 
     .scene.petted .pet-text {
       color: #ff7777;
+white-space: nowrap;
+bottom: -6rem;
     }
 
     .reset-btn {
@@ -151,9 +157,15 @@ white-space: pre-line;
     white-space: pre-line;
   }
 
+
   .reset-btn {
     bottom: 12px;
     right: 12px;
+  }
+
+  .scene.petted .pet-text {
+    bottom: -4rem;
+    font-size: clamp(1.2rem, 5vw, 2rem);
   }
 }
   </style>
